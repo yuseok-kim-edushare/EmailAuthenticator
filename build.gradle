@@ -5,13 +5,24 @@ plugins {
 group = 'com.kys9808'
 version = '1.0-SNAPSHOT'
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
+
+    implementation 'javax.mail:mail:1.4.7'
+    implementation 'javax.mail:javax.mail-api:1.6.2'
+
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
 }
 
 test {
