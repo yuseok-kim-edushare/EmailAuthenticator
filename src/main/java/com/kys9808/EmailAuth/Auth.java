@@ -16,7 +16,7 @@ class Authenticating {
 public class Auth {
     public static AuthJob AuthStart(String userEmail, String serviceProviderEmail, String serviceProviderPassword) {
         String authChallenge = Authenticating.generateAuthCode();
-        AuthJob AuthJob = new AuthJob(userEmail, "second", LocalDateTime.now().plusMinutes(5));
+        AuthJob AuthJob = new AuthJob(userEmail, authChallenge, LocalDateTime.now().plusMinutes(5));
         authChallenge = "your authentication code is: " + authChallenge;
         EmailSender.sendEmail(userEmail, "Authentication Code", authChallenge, serviceProviderEmail, serviceProviderPassword);
         return AuthJob;
