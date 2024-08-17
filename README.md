@@ -9,7 +9,7 @@ So I started making This project. 😊
 # Depend
 
 need your Gmail accounts with proper settings'
-
+(at least you need to login first in browser which on machine to be deamon(server) for this module)
 this project target JDK version is 21(I downloaded on Eclipse Temurin OpenJDK)
 
 ## How to Use this in your project?
