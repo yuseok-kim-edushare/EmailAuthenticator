@@ -22,7 +22,7 @@ this project target JDK version is 21(I downloaded on Eclipse Temurin OpenJDK)
 ***so use like this example*** <br>
 import my package <br> 
 AuthJob a = ~.Auth.AuthStart <br>
-( #somthing to needed *you can see detail on my cord*) <br>
+( #somthing to needed *you can see detail on my cood*) <br>
  <br>
  and user submit authcode to your server <br>
 if ~.Auth.AuthCheck( #somthing to needed) <br>
